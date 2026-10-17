@@ -1,0 +1,48 @@
+/* Páginas legais + rodapé institucional */
+:root{--verde:#064e3b;--verde-escuro:#032e24;--laranja:#ea580c;--creme:#fff7ed;--texto:#292524;--suave:#57534e;--borda:#e7e5e4}
+*{box-sizing:border-box}
+.lg-body{margin:0;background:var(--creme);color:var(--texto);font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+.lg-top{background:#16a34a;color:#fff;padding:14px 16px}
+.lg-top a{color:#fff;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:8px;max-width:820px;margin:0 auto}
+.lg-top-in{max-width:820px;margin:0 auto}
+.lg-main{max-width:820px;margin:0 auto;padding:32px 16px 56px}
+.lg-card{background:#fff;border:1px solid var(--borda);border-radius:20px;padding:28px 22px;box-shadow:0 4px 18px rgba(0,0,0,.04)}
+@media(min-width:768px){.lg-card{padding:44px 48px}}
+.lg-card h1{margin:0 0 6px;font-size:28px;line-height:1.2;color:var(--verde);font-weight:900}
+@media(min-width:768px){.lg-card h1{font-size:34px}}
+.lg-upd{margin:0 0 28px;color:var(--suave);font-size:14px}
+.lg-card h2{margin:30px 0 8px;font-size:19px;color:var(--verde);font-weight:800}
+.lg-card p,.lg-card li{font-size:15.5px;color:#3f3a36}
+.lg-card ul{padding-left:20px}
+.lg-card li{margin:4px 0}
+.lg-card a{color:var(--laranja);font-weight:600}
+.lg-box{background:var(--creme);border:1px solid #fed7aa;border-radius:14px;padding:16px 18px;margin:18px 0}
+.lg-box p{margin:4px 0}
+.lg-btn{display:inline-block;background:#16a34a;color:#fff!important;text-decoration:none;font-weight:800;border-radius:12px;padding:14px 22px;margin-top:8px}
+.lg-btn:hover{background:#15803d}
+.lg-grid{display:grid;gap:12px;margin:18px 0}
+@media(min-width:640px){.lg-grid{grid-template-columns:1fr 1fr}}
+.lg-grid .lg-box{margin:0}
+.lg-grid strong{display:block;color:var(--verde)}
+
+/* Rodapé */
+.site-footer{background:var(--verde-escuro);color:rgba(255,255,255,.78);padding:44px 16px 28px;font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sf-in{max-width:1000px;margin:0 auto;text-align:center}
+.sf-brand{color:#fff;font-weight:800;font-size:18px;margin:0 0 4px}
+.sf-tag{font-size:14px;margin:0 0 22px}
+.sf-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0 0 26px;padding:0;list-style:none}
+.sf-links a{display:inline-block;color:#fff;text-decoration:none;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:9px 16px;transition:background .2s,border-color .2s}
+.sf-links a:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.5)}
+.sf-info{font-size:13px;line-height:1.7;margin:0 0 18px}
+.sf-info a{color:#fff}
+.sf-seals{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;font-size:13px;margin:0 0 20px}
+.sf-disc{font-size:11.5px;line-height:1.6;color:rgba(255,255,255,.55);max-width:760px;margin:0 auto 16px}
+.sf-copy{font-size:12px;color:rgba(255,255,255,.6);border-top:1px solid rgba(255,255,255,.12);padding-top:16px;margin:0}
+
+/* Aviso de cookies */
+.ck{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:560px;margin:0 auto;background:#fff;color:var(--texto);border:1px solid var(--borda);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font-family:Poppins,system-ui,sans-serif;font-size:13px;line-height:1.5}
+.ck p{margin:0;flex:1 1 260px}
+.ck a{color:var(--laranja);font-weight:600}
+.ck button{background:#16a34a;color:#fff;border:0;border-radius:10px;font-weight:800;font-size:13px;padding:10px 18px;cursor:pointer}
+.ck button:hover{background:#15803d}
+.ck[hidden]{display:none}

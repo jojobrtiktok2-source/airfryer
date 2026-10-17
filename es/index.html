@@ -32,7 +32,7 @@ document.head.appendChild(a);
 (function () {
   // Fecha de la promoción (siempre hoy) y año del pie de página
   document.getElementById("promo-date").textContent = new Date().toLocaleDateString("es-419", { day: "2-digit", month: "2-digit", year: "numeric" });
-  document.getElementById("year").textContent = new Date().getFullYear();
+  var yr = document.getElementById("year"); if (yr) yr.textContent = new Date().getFullYear();
 
   // Rolagem suave até a oferta
   function smoothScroll(target, duration) {
