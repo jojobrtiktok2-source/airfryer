@@ -73,5 +73,7 @@ imágenes generadas, sin cambiar su contenido.
 - `assets/JkRnpY1-es.png`: texto exacto "GARANTÍA", "15 DÍAS", "INCONDICIONAL";
   conservar las tildes, hojas de laurel doradas, estrellas, anillos y fondo transparente.
 
-La versión `/es/index.html` carga sus 27 imágenes desde `assets/` relativo a su
-propia carpeta. No volver a enlazar estos archivos a `../assets/` al regenerar HTML.
+La versión `/es/index.html` carga sus 27 imágenes mediante rutas absolutas
+`/es/assets/`, para funcionar tanto en `/es` como en `/es/`. No usar rutas
+relativas `assets/` o `../assets/` al regenerar el HTML: sin la barra final,
+el navegador las resuelve contra la carpeta de la página en portugués.
